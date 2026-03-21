@@ -20,7 +20,7 @@ jobs:
 
       - name: Build and Pack
         run: |
-          npm ci
+          npm ci --ignore-scripts
           npm run build
           npm pack
           # Find the generated .tgz file
