@@ -21,7 +21,7 @@ jobs:
       - name: Build and Pack
         run: |
           npm ci --ignore-scripts
-          npm run build
+          npx tsc
           npm pack
           # Find the generated .tgz file
           TGZ_NAME=$(ls metacall-protocol-*.tgz)
